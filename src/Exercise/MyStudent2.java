@@ -15,19 +15,18 @@ public class MyStudent2 {
     }
 
     void displayInfo() {
-        System.out.println("Student: " + name);
-        System.out.println("Age: " + age);
-        System.out.println("Grade: " + grade);
-        System.out.println("Score: " + score);
-
-
+        //   System.out.println("Student: " + name);
+        // System.out.println("Age: " + age);
+        //System.out.println("Grade: " + grade);
+        // System.out.println("Score: " + score);
     }
 
     boolean hasPassed() {
-        if (score >= 50) {
+      /*  if (score >= 50) {
             return true;
         } else {
             return false;
-        }
+        }*/
+        return score >= 50 ? true : false;
     }
 }
