@@ -24,17 +24,27 @@ public class Cfsm {
         CoffeeShop tcs = new CoffeeShop("Tesha's Coffee Shop", menu);
 
         System.out.println("Adding orders:");
-        System.out.println(tcs.addOrder("1. hot cocoa"));
+        System.out.println(tcs.addOrder("tuna sandwich"));
         System.out.println(tcs.addOrder("2. iced tea"));
         System.out.println(tcs.addOrder("3. cinnamon roll"));
         System.out.println(tcs.addOrder("4. iced coffee"));
 
         System.out.println(tcs.listOrders());
         System.out.println(tcs.dueAmount());
+        System.out.println(tcs.orders.size());
 
-        System.out.println(tcs.fulfillOrder());
-        System.out.println(tcs.fulfillOrder());
-        System.out.println(tcs.fulfillOrder());
+        for(String order: tcs.orders){
+            System.out.println(order);
+        }
+//
+        for(int i = 0; i < tcs.orders.size(); i++){
+            System.out.println("Here");
+            System.out.println(tcs.fulfillOrder());
+        }
+//
+//        System.out.println(tcs.fulfillOrder());
+//        System.out.println(tcs.fulfillOrder());
+//        System.out.println(tcs.fulfillOrder());
 
         System.out.println(tcs.listOrders());
         System.out.println("Total Due: $" + tcs.dueAmount());
