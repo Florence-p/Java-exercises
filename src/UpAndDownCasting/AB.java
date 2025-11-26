@@ -1,7 +1,7 @@
 package UpAndDownCasting;
 
 public class AB {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         A obj = new B();
         obj.show1();

@@ -34,6 +34,7 @@ public class animal {
     void makeSound() {
         System.out.println("The " + this.getType() + " makes a roar sound.");
     }
+
     void description() {
         System.out.println(this.getType() + " is a lion and is " + this.getAge() + " years old");
     }

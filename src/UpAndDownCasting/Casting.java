@@ -1,12 +1,12 @@
 package UpAndDownCasting;
 
 public class Casting {
-    public static void main (String[] args){
-double ticketPrice = 3500.75;
+    public static void main(String[] args) {
+        double ticketPrice = 3500.75;
 
-float priceFloat = (float) ticketPrice;
+        float priceFloat = (float) ticketPrice;
 
-int priceInt = (int) 3500.75;
+        int priceInt = (int) 3500.75;
 
 //typecasting
         System.out.println("Original price (double): " + ticketPrice);
@@ -14,8 +14,8 @@ int priceInt = (int) 3500.75;
         System.out.println("Price as int: " + priceInt);
 
         //downcasting
-MovieTicket ticket1 = new VipMovieTicket(8000.25);
-VipMovieTicket vipTicket = (VipMovieTicket) ticket1;
-vipTicket.showTicketType();
+        MovieTicket ticket1 = new VipMovieTicket(8000.25);
+        VipMovieTicket vipTicket = (VipMovieTicket) ticket1;
+        vipTicket.showTicketType();
     }
 }
